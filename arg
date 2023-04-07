@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ $# -eq 2 ]
+
+then 
+
+echo " File-name: $0"
+echo $1
+echo $2
+echo $$ # Process id
+echo $* # No args
+echo $#
+echo $@
+cal
+echo $?
+else
+echo "Pass two args"
+fi
