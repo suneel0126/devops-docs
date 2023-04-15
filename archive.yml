@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  name: compress
+  become: yes
+  tasks:
+    - name: compress dir
+      archive:
+        path: /home/ec2-user/test/
+        dest: /opt/ok.tar.gz
+        format: gz
+        force_archive: yes
+        owner: root
+        group: root
